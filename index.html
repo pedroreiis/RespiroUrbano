@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Respiro Urbano — A cidade também precisa cuidar de quem vive nela</title>
+<meta name="description" content="Plataforma colaborativa de espaços urbanos de acolhimento e descanso. Projeto acadêmico demonstrativo.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#app">Ir para o conteúdo</a>
+<header class="top">
+  <a class="brand" href="#/" aria-label="Respiro Urbano, página inicial"><span class="logo" aria-hidden="true">🌿</span>Respiro Urbano</a>
+  <button class="icon menu-btn" data-act="menu" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">☰</button>
+  <nav id="nav" aria-label="Principal">
+    <a href="#/">Início</a><a href="#/painel">Painel</a><a href="#/mapa">Mapa</a><a href="#/catalogo">Espaços</a>
+    <a href="#/contribuir">Contribuir</a><a href="#/relatos">Relatos</a><a href="#/favoritos">Favoritos</a><a href="#/perfil">Perfil</a><a href="#/sobre">Sobre</a>
+  </nav>
+  <div class="a11y">
+    <button data-act="big" aria-pressed="false" aria-label="Aumentar tamanho da fonte">A+</button>
+    <button data-act="hc" aria-pressed="false" aria-label="Alternar alto contraste">◐</button>
+  </div>
+</header>
+<main id="app" tabindex="-1"></main>
+<footer>
+  <p><strong>Respiro Urbano</strong> — projeto extensionista de Sistemas de Computação Móvel (Universo).</p>
+  <p>Todos os locais, endereços, coordenadas, horários e comentários são <strong>fictícios, apenas para demonstração</strong>. Relatos são comunitários e não são protocolos oficiais da prefeitura.</p>
+</footer>
+<dialog id="dlg" aria-labelledby="dlg-t"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
